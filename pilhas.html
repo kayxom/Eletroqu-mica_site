@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>
+      Pilhas Galvânicas — Próspero &amp; os Elétrons
+    </title>
+
+    <meta
+      name="description"
+      content="Pilha de Daniell explicada com A Tempestade: ânodo, cátodo, ponte salina e fluxo de elétrons animado."
+    />
+  </head>
+
+  <body>
+    <div class="relative min-h-screen">
+      <div class="fog"></div>
+      <div class="rain"></div>
+      <div class="lightning-flash"></div>
+
+      <header
+        class="relative z-10 border-b border-border/40 backdrop-blur-md bg-tempest/40"
+      >
+        <nav
+          class="mx-auto max-w-7xl px-6 py-5 flex items-center justify-between flex-wrap gap-4"
+        >
+          <a href="./index.html" class="flex items-center gap-3 group">
+            <span class="text-2xl animate-bolt">⚡</span>
+
+            <span
+              class="font-display text-xl font-semibold text-gold-gradient tracking-wide"
+            >
+              Energia Inícial
+            </span>
+          </a>
+
+          <ul class="flex flex-wrap gap-1 md:gap-2">
+            <li>
+              <a
+                href="./index.html"
+                class="px-3 py-2 text-sm font-body transition-all relative text-muted-foreground hover:text-foreground"
+              >
+                Prólogo
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="./tempestade.html"
+                class="px-3 py-2 text-sm font-body transition-all relative text-muted-foreground hover:text-foreground"
+              >
+                A Tempestade
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="./eletroquimica.html"
+                class="px-3 py-2 text-sm font-body transition-all relative text-muted-foreground hover:text-foreground"
+              >
+                Eletroquímica
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="px-3 py-2 text-sm font-body transition-all relative text-primary active"
+                href="./pilhas.html"
+                data-status="active"
+                aria-current="page"
+              >
+                Pilhas
+
+                <span
+                  class="absolute left-2 right-2 -bottom-0.5 h-px bg-gradient-to-r from-transparent via-primary to-transparent"
+                ></span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="./eletrolise.html"
+                class="px-3 py-2 text-sm font-body transition-all relative text-muted-foreground hover:text-foreground"
+              >
+                Eletrólise
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="relative z-10">
+        <section class="px-6 py-20 mx-auto max-w-5xl">
+          <p class="font-script text-primary tracking-[0.4em] text-xs">
+            ATO III · CENA I
+          </p>
+
+          <h1 class="mt-4 font-display text-5xl md:text-7xl text-gold-gradient">
+            Pilhas Galvânicas
+          </h1>
+
+          <p
+            class="mt-6 max-w-2xl text-lg text-muted-foreground font-display italic"
+          >
+            “Quando dois metais se encontram numa ilha, nasce uma corrente como
+            nasce um amor à primeira vista.”
+          </p>
+
+          <div
+            class="mt-16 parchment parchment-gold-edge rounded-lg p-6 md:p-10"
+          >
+            <h2 class="font-display text-3xl text-center">
+              A Pilha de Daniell
+            </h2>
+
+            <p class="text-center text-muted-foreground text-sm mt-2 italic">
+              Zn | Zn²⁺ ‖ Cu²⁺ | Cu
+            </p>
+
+            <div class="mt-10 relative">
+              <svg viewBox="0 0 600 300" class="w-full max-w-3xl mx-auto">
+                <defs>
+                  <linearGradient id="wire" x1="0" x2="1">
+                    <stop
+                      offset="0%"
+                      stop-color="oklch(0.78 0.14 85)"
+                    ></stop>
+
+                    <stop
+                      offset="50%"
+                      stop-color="oklch(0.92 0.18 95)"
+                    ></stop>
+
+                    <stop
+                      offset="100%"
+                      stop-color="oklch(0.78 0.14 85)"
+                    ></stop>
+                  </linearGradient>
+
+                  <path
+                    id="wirePath"
+                    d="M 130 60 L 130 30 L 470 30 L 470 60"
+                  ></path>
+                </defs>
+
+                <g>
+                  <rect
+                    x="60"
+                    y="80"
+                    width="160"
+                    height="180"
+                    rx="6"
+                    fill="oklch(0.20 0.04 240 / 0.6)"
+                    stroke="oklch(0.78 0.14 85 / 0.4)"
+                  ></rect>
+
+                  <rect
+                    x="380"
+                    y="80"
+                    width="160"
+                    height="180"
+                    rx="6"
+                    fill="oklch(0.20 0.04 240 / 0.6)"
+                    stroke="oklch(0.78 0.14 85 / 0.4)"
+                  ></rect>
+
+                  <rect
+                    x="60"
+                    y="140"
+                    width="160"
+                    height="120"
+                    fill="oklch(0.55 0.10 240 / 0.4)"
+                  ></rect>
+
+                  <rect
+                    x="380"
+                    y="140"
+                    width="160"
+                    height="120"
+                    fill="oklch(0.55 0.18 220 / 0.5)"
+                  ></rect>
+                </g>
+
+                <path
+                  d="M 200 150 Q 300 50 400 150"
+                  stroke="oklch(0.78 0.14 85)"
+                  stroke-width="14"
+                  fill="none"
+                  stroke-linecap="round"
+                  opacity="0.6"
+                ></path>
+
+                <text
+                  x="300"
+                  y="65"
+                  text-anchor="middle"
+                  class="fill-muted-foreground"
+                  font-size="20"
+                  font-family="serif"
+                  font-style="italic">
+                
+                  ponte salina (KCl)
+  
+                </text>
+
+                <use
+                  href="#wirePath"
+                  stroke="url(#wire)"
+                  stroke-width="3"
+                  fill="none"
+                ></use>
+
+                <circle
+                  cx="300"
+                  cy="30"
+                  r="14"
+                  fill="oklch(0.92 0.18 95 / 0.3)"
+                  stroke="oklch(0.92 0.18 95)"
+                  stroke-width="2"
+                >
+                  <animate
+                    attributeName="fill-opacity"
+                    values="0.2;0.9;0.2"
+                    dur="1.6s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </circle>
+
+                <text
+                  x="300"
+                  y="35"
+                  text-anchor="middle"
+                  font-size="14"
+                >
+                  💡
+                </text>
+
+                <rect
+                  x="125"
+                  y="60"
+                  width="10"
+                  height="170"
+                  fill="oklch(0.62 0.16 45)"
+                ></rect>
+
+                <rect
+                  x="465"
+                  y="60"
+                  width="10"
+                  height="170"
+                  fill="oklch(0.55 0.18 220)"
+                ></rect>
+
+                <text
+                  x="140"
+                  y="280"
+                  text-anchor="middle"
+                  class="fill-copper"
+                  font-size="14"
+                  font-family="serif"
+                  font-weight="600"
+                >
+                  Zn (ânodo −)
+                </text>
+
+                <text
+                  x="460"
+                  y="280"
+                  text-anchor="middle"
+                  class="fill-accent"
+                  font-size="14"
+                  font-family="serif"
+                  font-weight="600"
+                >
+                  Cu (cátodo +)
+                </text>
+
+                <text
+                  x="140"
+                  y="170"
+                  text-anchor="middle"
+                  font-size="11"
+                  class="fill-muted-foreground"
+                >
+                  ㅤㅤㅤZnSO₄
+                </text>
+
+                <text
+                  x="460"
+                  y="170"
+                  text-anchor="middle"
+                  font-size="11"
+                  class="fill-muted-foreground"
+                >
+                  CuSO₄ㅤㅤㅤ
+                </text>
+
+                <circle
+                  r="4"
+                  fill="oklch(0.92 0.18 95)"
+                  style="filter:drop-shadow(0 0 4px oklch(0.92 0.18 95))"
+                >
+                  <animateMotion
+                    dur="2.4s"
+                    repeatCount="indefinite"
+                    begin="0s"
+                  >
+                    <mpath href="#wirePath"></mpath>
+                  </animateMotion>
+                </circle>
+
+                <circle
+                  r="4"
+                  fill="oklch(0.92 0.18 95)"
+                  style="filter:drop-shadow(0 0 4px oklch(0.92 0.18 95))"
+                >
+                  <animateMotion
+                    dur="2.4s"
+                    repeatCount="indefinite"
+                    begin="0.5s"
+                  >
+                    <mpath href="#wirePath"></mpath>
+                  </animateMotion>
+                </circle>
+
+                <circle
+                  r="4"
+                  fill="oklch(0.92 0.18 95)"
+                  style="filter:drop-shadow(0 0 4px oklch(0.92 0.18 95))"
+                >
+                  <animateMotion
+                    dur="2.4s"
+                    repeatCount="indefinite"
+                    begin="1s"
+                  >
+                    <mpath href="#wirePath"></mpath>
+                  </animateMotion>
+                </circle>
+
+                <circle
+                  r="4"
+                  fill="oklch(0.92 0.18 95)"
+                  style="filter:drop-shadow(0 0 4px oklch(0.92 0.18 95))"
+                >
+                  <animateMotion
+                    dur="2.4s"
+                    repeatCount="indefinite"
+                    begin="1.5s"
+                  >
+                    <mpath href="#wirePath"></mpath>
+                  </animateMotion>
+                </circle>
+
+                <circle
+                  r="4"
+                  fill="oklch(0.92 0.18 95)"
+                  style="filter:drop-shadow(0 0 4px oklch(0.92 0.18 95))"
+                >
+                  <animateMotion
+                    dur="2.4s"
+                    repeatCount="indefinite"
+                    begin="2s"
+                  >
+                    <mpath href="#wirePath"></mpath>
+                  </animateMotion>
+                </circle>
+
+                
+              </svg>
+            </div>
+ 
+            <div class="mt-8 grid md:grid-cols-2 gap-4 text-sm">
+              <div class="bg-storm/40 rounded p-4 border-l-2 border-copper">
+                <p class="font-display text-copper text-lg">
+                  Ânodo (−) · oxidação
+                </p>
+
+                <p class="font-mono mt-1">
+                   ZnSO₄  → Zn²⁺+ SO₄²⁻
+                </p>
+
+                <p class="mt-2 italic text-muted-foreground">
+                  O metal diminiu após a oxidação
+                  <br>
+                   <br>
+                  Próspero abre mão do trono — cede elétrons.
+                </p>
+              </div>
+
+              <div class="bg-storm/40 rounded p-4 border-l-2 border-accent">
+                <p class="font-display text-accent text-lg">
+                  Cátodo (+) · redução
+                </p>
+
+                <p class="font-mono mt-1">
+                  CuSO₄  → Cu²⁺ + SO₄²⁻
+                </p>
+
+                <p class="mt-2 italic text-muted-foreground">
+                  O metal cresceu após a Redução
+                  <br>
+                  <br>
+                  Antonio toma o que não é seu — recebe elétrons.
+                </p>
+              </div>
+
+
+
+              <div class="bg-storm/40 rounded p-4 border-l-2 border-copper">
+                <p class="font-display text-copper text-lg">
+                  Ponte Salina 
+                </p>
+
+                <p class="font-mono mt-1">
+                   Kcl → K⁺ + Cl⁻ 
+                </p>
+
+                <p class="mt-2 italic text-muted-foreground">
+                  K⁺ passa para o lado do Cátado
+                  <br>
+                  <br>
+                  Cl⁻ passa para o lado do Ânodo
+                </p>
+              </div>
+
+
+             <div class="bg-storm/40 rounded p-4 border-l-2 border-accent">
+                <p class="font-display text-accent text-lg">
+                  Princípio da Eletroneutralidade
+                </p>
+
+                <p class="font-mono mt-1">
+                  A regra que determina que um líquido (ou solução) deve ser eletricamente neutro
+                </p>
+              </div>
+
+  
+            </div>
+          </div>
+
+          <div class="mt-12 parchment rounded-lg p-8">
+            <h3 class="font-display text-2xl">
+             Diferença de Potencial (ddp) 
+            </h3>
+
+            <p class="mt-3 text-muted-foreground">
+              a DDP (Diferença de Potencial) representa a força que impulsiona os elétrons de um 
+              eletrodo para o outro dentro de uma pilha ou célula galvânica. Ela também é amplamente
+               chamada de força eletromotriz (fem) ou variação de potencial (ΔEº)
+            </p>
+
+            <div class="mt-6 text-center font-mono text-xl md:text-4xl">
+              E°<sub>pilha</sub> = E°<sub>cátodo</sub> −
+              E°<sub>ânodo</sub>
+            </div>
+            <br>
+            <br>ㅤㅤㅤㅤㅤㅤEXEMPLO:
+            <p> ㅤㅤㅤㅤㅤㅤ(Udesc) Analise a pilha Feº; Fe2+ // Cu2+; Cuº, cujos potenciais-padrão de redução são: </p>
+                                <br> 
+                ㅤㅤㅤㅤㅤㅤFe2+ + 2 e- → Feº Eº = -0,44V
+                                <br>
+                                <br> 
+                ㅤㅤㅤㅤㅤㅤCu2+ + 2 e- → Cuº Eº = + 0,34V
+                                <br>
+                                <br> 
+                ㅤㅤㅤㅤㅤㅤQual é a ddp (ΔEº) dessa pilha é?
+
+            <div class="mt-4 text-center font-mono text-lg text-primary">
+
+              ΔE = 0,34 - (-0,44) 
+              <br> 
+              ΔE = 0,34 + 0,44
+              <br> 
+              ΔE = 0,78 V.
+              <span class="shimmer-text font-display text-3xl">
+                
+              </span>
+            </div>
+
+            <p
+              class="mt-4 text-sm text-muted-foreground italic font-display text-center"
+            >
+              Positivo = espontâneo. A peça se desenrola sozinha, como o
+              naufrágio orquestrado por Próspero.
+            </p>
+          </div>
+
+          <div class="mt-12 grid md:grid-cols-3 gap-4">
+            <div
+              class="parchment rounded-lg p-5 animate-fade-in-up"
+              style="animation-delay:0s"
+            >
+              <p class="font-script text-xs tracking-widest text-copper">
+                ÂNODO
+              </p>
+
+              <p class="mt-2 text-foreground/90 text-sm">
+                Onde Acontece a Oxidação
+              </p>
+            </div>
+
+            <div
+              class="parchment rounded-lg p-5 animate-fade-in-up"
+              style="animation-delay:0.1s"
+            >
+              <p class="font-script text-xs tracking-widest text-accent">
+                CÁTODO
+              </p>
+
+              <p class="mt-2 text-foreground/90 text-sm">
+                Captura Cátions (redução)
+              </p>
+            </div>
+
+            <div
+              class="parchment rounded-lg p-5 animate-fade-in-up"
+              style="animation-delay:0.2s"
+            >
+              <p class="font-script text-xs tracking-widest text-primary">
+                PONTE SALINA
+              </p>
+
+              <p class="mt-2 text-foreground/90 text-sm">
+                Mantém a neutralidade — como Ariel mediando os mortais
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer
+        class="relative z-10 mt-24 border-t border-border/40 py-10 text-center text-sm text-muted-foreground font-display italic"
+      >
+        
+      Kayke · 2026
+      </footer>
+    </div>
+  </body>
+</html>

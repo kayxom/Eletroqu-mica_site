@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Próspero & os Elétrons — Eletroquímica via Shakespeare</title>
+
+    <meta 
+        name="description"
+        content="Aprenda eletroquímica através do drama de A Tempestade de Shakespeare. Pilhas, eletrólise e reações redox em tom shakespeariano."
+    />
+</head>
+
+<body>
+    <div class="relative min-h-screen">
+
+        <div class="fog"></div>
+        <div class="rain"></div>
+        <div class="lightning-flash"></div>
+
+        <header class="relative z-10 border-b border-border/40 backdrop-blur-md bg-tempest/40">
+            <nav class="mx-auto max-w-7xl px-6 py-5 flex items-center justify-between flex-wrap gap-4">
+
+                <a 
+                    class="flex items-center gap-3 group active"
+                    href="./index.html"
+                    data-status="active"
+                    aria-current="page"
+                >
+                    <span class="text-2xl animate-bolt">⚡</span>
+
+                    <span class="font-display text-xl font-semibold text-gold-gradient tracking-wide">
+                     Energia Inícial
+                    </span>
+                </a>
+
+                <ul class="flex flex-wrap gap-1 md:gap-2">
+
+                    <li>
+                        <a 
+                            class="px-3 py-2 text-sm font-body transition-all relative text-primary active"
+                            href="./index.html"
+                            data-status="active"
+                            aria-current="page"
+                        >
+                            Prólogo
+
+                            <span class="absolute left-2 right-2 -bottom-0.5 h-px bg-gradient-to-r from-transparent via-primary to-transparent"></span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a 
+                            href="./tempestade.html"
+                            class="px-3 py-2 text-sm font-body transition-all relative text-muted-foreground hover:text-foreground"
+                        >
+                            A Tempestade
+                        </a>
+                    </li>
+
+                    <li>
+                        <a 
+                            href="./eletroquimica.html"
+                            class="px-3 py-2 text-sm font-body transition-all relative text-muted-foreground hover:text-foreground"
+                        >
+                            Eletroquímica
+                        </a>
+                    </li>
+
+                    <li>
+                        <a 
+                            href="./pilhas.html"
+                            class="px-3 py-2 text-sm font-body transition-all relative text-muted-foreground hover:text-foreground"
+                        >
+                            Pilhas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a 
+                            href="./eletrolise.html"
+                            class="px-3 py-2 text-sm font-body transition-all relative text-muted-foreground hover:text-foreground"
+                        >
+                            Eletrólise
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <main class="relative z-10">
+
+            <!-- HERO -->
+            <section class="relative min-h-[88vh] flex items-center px-6">
+
+                <div class="mx-auto max-w-5xl text-center">
+
+                    <p class="font-script text-primary tracking-[0.4em] text-xs md:text-sm animate-fade-in-up">
+                        ATO I · CENA I
+                    </p>
+
+                    <h1 
+                        class="mt-6 font-display text-6xl md:text-8xl leading-[0.95] animate-fade-in-up"
+                        style="animation-delay:0.15s"
+                    >
+                        <span class="block italic text-foreground/90">
+                            Magia, Energia 
+                        </span>
+
+                        <span class="block shimmer-text">
+                            e Eletroquímica
+                        </span>
+                    </h1>
+
+                    <p 
+                        class="mt-8 max-w-2xl mx-auto text-lg md:text-xl font-display italic text-muted-foreground animate-fade-in-up"
+                        style="animation-delay:0.3s"
+                    >
+                        "Não tenhais medo. A ilha está cheia de ruídos, sons e melodias suaves que trazem deleite e não ferem.".
+                        <br />
+                        
+                    </p>
+
+                    <div 
+                        class="mt-12 flex flex-wrap justify-center gap-4 animate-fade-in-up"
+                        style="animation-delay:0.45s"
+                    >
+
+                        <a 
+                            href="./tempestade.html"
+                            class="px-7 py-3 border border-primary/60 text-primary hover:bg-primary/10 transition font-display tracking-wide"
+                        >
+                            Ler a peça
+                        </a>
+
+                        <a 
+                            href="./eletroquimica.html"
+                            class="px-7 py-3 bg-gradient-to-r from-primary to-copper text-primary-foreground hover:opacity-90 transition font-display tracking-wide animate-pulse-glow">
+                            Invocar a química ⚡
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <span class="absolute top-20 left-10 text-5xl animate-float opacity-40">
+                    
+                </span>
+
+                <span 
+                    class="absolute bottom-32 right-12 text-4xl animate-float opacity-30"
+                    style="animation-delay:1.5s"
+                >
+                    
+                </span>
+
+                <span 
+                    class="absolute top-1/2 right-1/4 text-3xl animate-float opacity-30"
+                    style="animation-delay:0.8s"
+                >
+                    
+                </span>
+
+            </section>
+
+            <!-- CARDS -->
+            <section class="px-6 py-24 mx-auto max-w-6xl">
+
+                <h2 class="text-center font-display text-4xl md:text-5xl text-gold-gradient">
+                    Sequência Didática:
+                </h2>
+
+                <p class="text-center mt-4 text-muted-foreground italic font-display">
+                    Cada cena guarda uma lição da eletroquímica.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-6 mt-16">
+
+                    <!-- CARD 1 -->
+                    <a 
+                        href="./tempestade.html"
+                        style="animation-delay:0s"
+                        class="parchment parchment-gold-edge rounded-lg p-8 hover:-translate-y-2 transition-all duration-500 group animate-fade-in-up"
+                    >
+
+                        <div class="flex items-baseline justify-between">
+                            <span class="font-script text-primary text-sm tracking-widest">
+                                ATO I
+                            </span>
+
+                            <span class="text-3xl group-hover:animate-bolt">
+                                ⛈
+                            </span>
+                        </div>
+
+                        <h3 class="mt-6 font-display text-2xl text-foreground">
+                            A Tempestade
+                        </h3>
+
+                        <p class="mt-3 text-muted-foreground text-sm leading-relaxed">
+                            Apresentação da Peça e introdução da Eletroquímica 
+                        </p>
+
+                        <span class="mt-6 inline-block text-primary text-sm font-display italic group-hover:translate-x-1 transition-transform">
+                            Entrar em cena →
+                        </span>
+
+                    </a>
+
+                    <!-- CARD 2 -->
+                    <a 
+                        href="./pilhas.html"
+                        style="animation-delay:0.15s"
+                        class="parchment parchment-gold-edge rounded-lg p-8 hover:-translate-y-2 transition-all duration-500 group animate-fade-in-up"
+                    >
+
+                        <div class="flex items-baseline justify-between">
+                            <span class="font-script text-primary text-sm tracking-widest">
+                                ATO II
+                            </span>
+
+                            <span class="text-3xl group-hover:animate-bolt">
+                                🜚
+                            </span>
+                        </div>
+
+                        <h3 class="mt-6 font-display text-2xl text-foreground">
+                            A Pilha de Daniel
+                        </h3>
+
+                        <p class="mt-3 text-muted-foreground text-sm leading-relaxed">
+                            A seguir, será explicado como funciona a pilha de Daniell e sua importância para a eletroquímica.
+                        </p>
+
+                        <span class="mt-6 inline-block text-primary text-sm font-display italic group-hover:translate-x-1 transition-transform">
+                            Entrar em cena →
+                        </span>
+
+                    </a>
+
+                    <!-- CARD 3 -->
+                    <a 
+                        href="./eletrolise.html"
+                        style="animation-delay:0.3s"
+                        class="parchment parchment-gold-edge rounded-lg p-8 hover:-translate-y-2 transition-all duration-500 group animate-fade-in-up"
+                    >
+
+                        <div class="flex items-baseline justify-between">
+                            <span class="font-script text-primary text-sm tracking-widest">
+                                ATO III
+                            </span>
+
+                            <span class="text-3xl group-hover:animate-bolt">
+                                ✦
+                            </span>
+                        </div>
+
+                        <h3 class="mt-6 font-display text-2xl text-foreground">
+                            Eletrólise 
+                        </h3>
+
+                        <p class="mt-3 text-muted-foreground text-sm leading-relaxed">
+                            Por sua vez, será explicado o funcionamento da eletrólise e suas principais aplicações.
+                        </p>
+
+                        <span class="mt-6 inline-block text-primary text-sm font-display italic group-hover:translate-x-1 transition-transform">
+                            Entrar em cena →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+            <!-- QUOTE -->
+            <section class="px-6 py-24">
+
+                <blockquote class="mx-auto max-w-3xl text-center">
+
+                    <p class="font-display italic text-3xl md:text-4xl text-foreground/90 leading-snug">
+                        “O passado é prólogo”
+                    </p>
+
+                    <footer class="mt-6 text-sm tracking-[0.3em] text-primary font-script">
+                        — ANTONIO, ATO II · CENA I
+                    </footer>
+
+                    <p class="mt-8 text-muted-foreground max-w-xl mx-auto">
+                        Toda reação eletroquímica também tem um passado: os elétrons que já foram, e os que estão por vir.
+                    </p>
+
+                </blockquote>
+
+            </section>
+
+        </main>
+
+        <footer class="relative z-10 mt-24 border-t border-border/40 py-10 text-center text-sm text-muted-foreground font-display italic">
+            Prof.Kayke · 2026
+        </footer>
+
+    </div>
+</body>
+
+</html>
